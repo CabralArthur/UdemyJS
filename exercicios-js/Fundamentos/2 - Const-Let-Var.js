@@ -10,6 +10,6 @@ let b = 2; //Atribuição de variável (utilizando let)
 //Pelo fato de que let é mais moderno.
 
 //Atribuindo constante (utilizando const)
-const c = 1;x
+const c = 1;
 
-console.log(a,b,c)
+console.log(a,b,c);
