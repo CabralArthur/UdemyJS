@@ -4,7 +4,7 @@ A pergunta dessa aula é: como JavaScript é organizado?
 Existem muitas formas de se organizar JavaScript, uma das formas mais
 características é inspirada na linguagem C.
 
-Do ponto de visto de organização básica da linguagem, ela é organizada em
+Do ponto de visto da organização básica da linguagem, ela é organizada em
 sentenças e blocos de código.
 
 Analogia: Como se organiza um livro de português?
