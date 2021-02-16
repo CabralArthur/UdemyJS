@@ -11,7 +11,7 @@
 
 console.log(sera);
 
-//Exemplo 1 - Dentro do escopo (visão) de uma function
+//Exemplo 2 - Dentro do escopo (visão) de uma function
 
 function teste(){
     var local = 123;
