@@ -1,4 +1,3 @@
-
 //Declarando contador (variável que irá controlar o laço)
 let contador = 1;
 
