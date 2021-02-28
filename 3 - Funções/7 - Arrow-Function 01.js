@@ -16,6 +16,6 @@ let ola = function () {
     return 'Olá!'
 }
 
-ola = () => 'Olá'
+ola = () => 'Olá'//Nesse caso, retorna-se a string 'Olá'
 
 console.log(ola())
