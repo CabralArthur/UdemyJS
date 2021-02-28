@@ -2,7 +2,7 @@
 //e algumas possibilidades que são
 //presentes ao se trabalhar com funções.
 
-//Função:
+//Função em JS:
 //1 - First-Class-Object
 //2 - High-Order Function (Função de alta ordem)
 
@@ -31,7 +31,7 @@ console.log(array[0](2, 3));
 //Declarando objeto
 const obj = {};
 
-//Declaranto chave falar e valor função que retorna a string
+//Declarando chave falar e valor função que retorna a string
 obj.falar = function () { return 'Opa' };
 
 //Imprimindo função presente no objeto
