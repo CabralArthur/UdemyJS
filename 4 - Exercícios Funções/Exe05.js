@@ -12,13 +12,21 @@ receba um valor como 0.30000000000000004 e retorne R$0,30 (observe a vírgula e 
 
 function converteNumR$(numero) {
     //Formatando número
-    formatado = numero.toFixed(2)
+    formatado = numero.toFixed(2);
     //Fazendo a troca do ponto pela vírgula
-    trocado = String(formatado).replace('.', ',')
+    trocado = String(formatado).replace('.', ',');
     //Adicionao o R$ no começo do número
-    final = `R$${trocado}`
+    final = `R$${trocado}`;
     //Imprimindo valor completamente convertido
-    console.log(final)
-}
+    console.log(final);
+};
 
-converteNumR$(0.30000000000000004)
+converteNumR$(0.30000000000000004);
+
+//Em JavaScript temos a função toLocaleString
+
+number = 12423145;
+
+numberFormated = number.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })
+
+console.log(numberFormated) //style utilizada para estilizar texto para moeda
