@@ -33,4 +33,12 @@ notasBaixas2 = notas.filter(function (nota) {
     return nota < 7;
 })
 
-console.log(notasBaixas2)
+//Imprimindo array
+console.log(notasBaixas2);
+
+//Utilizando a função filter com uma arrow function, deixando
+//o código mais curto
+const notasBaixas3 = notas.filter(nota => nota < 7);
+
+//Imprimindo Array
+console.log(notasBaixas3);
