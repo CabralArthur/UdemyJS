@@ -14,3 +14,30 @@ vetor com o número de vezes que ele bateu seu recorde de maior número de ponto
 jogo. (Número do pior jogo)
 
 */
+
+let jogos = "0, 1, 2, 3"
+
+function avaliaPontos(stringPontuacoes) {
+    //Declarando variável de pontuações que irá separar as pontuações por vírgula
+    let pontuacoes = stringPontuacoes.split(", ");
+    let qtdQuebraDeRecords = 0
+    let piorJogo = 1
+    let maiorPontuacao = pontuacoes[0]
+    let menorPontuacao = pontuacoes[0]
+
+    for (let i = 1; i < pontuacoes.length; i++) {
+
+        if (pontuacoes[i] > maiorPontuacao) {
+            maiorPontuacao = pontuacoes[i]
+            qtdQuebraDeRecords++
+
+        } else if (pontuacoes[i] < menorPontuacao) {
+            menorPontuacao = pontuacoes[i]
+            piorJogo = i + 1
+        }
+
+    }
+    return [qtdQuebraDeRecords, piorJogo]
+}
+
+console.log(avaliaPontos(jogos))
