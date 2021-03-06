@@ -22,18 +22,20 @@ e o aluno será aprovado.
 
 function sisNotas(nota) {
     //Verifica Reprovado
-    if (nota % 5 == 0) {
+    if (nota < 38) {
+        console.log('Reprovado')
+    } else if (nota % 5 == 0) {
         console.log((Math.floor(nota / 5)) * 5)
-    }
-
-}
-
-/*
-else {
+    } else {
         console.log(((Math.floor(nota / 5)) * 5) + 5)
     }
-*/
+}
 
-sisNotas(38)
+//Aprovado, arredondando para 40
+sisNotas(38);
 
-sisNotas(45)
+//Aprovado, arredondando para 85
+sisNotas(84);
+
+//Reprovado, sem chance de aredondamento
+sisNotas(29);
