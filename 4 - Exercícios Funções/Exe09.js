@@ -18,3 +18,22 @@ No caso de a nota ser 38, o arredondamento é possível pois atingirá 40
 e o aluno será aprovado.
 
 */
+
+
+function sisNotas(nota) {
+    //Verifica Reprovado
+    if (nota % 5 == 0) {
+        console.log((Math.floor(nota / 5)) * 5)
+    }
+
+}
+
+/*
+else {
+        console.log(((Math.floor(nota / 5)) * 5) + 5)
+    }
+*/
+
+sisNotas(38)
+
+sisNotas(45)
