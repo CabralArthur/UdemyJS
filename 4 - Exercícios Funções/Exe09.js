@@ -24,9 +24,11 @@ function sisNotas(nota) {
     //Verifica Reprovado
     if (nota < 38) {
         console.log('Reprovado')
+      //Verificando se o valor é divisível por 5
     } else if (nota % 5 == 0) {
         console.log((Math.floor(nota / 5)) * 5)
     } else {
+      //Se não, o valor será arredondado e somado à 5
         console.log(((Math.floor(nota / 5)) * 5) + 5)
     }
 }
