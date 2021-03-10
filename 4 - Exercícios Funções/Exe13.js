@@ -11,8 +11,15 @@ function eUtil(dia){
         case 7:
             console.log("O dia não é útil");
             break;
-        default:
+        case 2:
+        case 3:
+        case 4:
+        case 5:
+        case 6:
             console.log("O dia é útil");
+            break;
+        default:
+            console.log('[Dia Inválido]');
             break;
 
     };
