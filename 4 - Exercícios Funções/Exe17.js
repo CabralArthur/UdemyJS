@@ -15,3 +15,27 @@ Use a estrutura switch e faça um caso default que indique que o plano é invál
 
 
 */
+
+function aumentoPorPlano(plano, salarioAtual) {
+    switch (plano) {
+        case "A":
+            salarioAtual += (salarioAtual * 0.1);
+            console.log(`Seu salário atual é ${salarioAtual}`);
+            break;
+        case "B":
+            salarioAtual += (salarioAtual * 0.15);
+            console.log(`Seu salário atual é ${salarioAtual}`);
+            break;
+        case "C":
+            salarioAtual += (salarioAtual * 0.2);
+            console.log(`Seu salário atual é ${salarioAtual}`);
+            break;
+        default:
+            console.log('Plano Inválido')
+            break;
+    }
+}
+
+
+aumentoPorPlano('A', 100);
+aumentoPorPlano('Z', 100);
