@@ -45,6 +45,6 @@ console.log(Object.keys(filha2))
 
 //Percorrendo objeto
 for(let key in filha2){
-    filha2.hasOwnProperty(key) ?
+    filha2.hasOwnProperty(key) ? //Veirifcando se a propriedade é do próprio objeto
         console.log(key) : console.log('Por Herança') //Imprimindo se é do próprio objeto ou se é por herança
 }
